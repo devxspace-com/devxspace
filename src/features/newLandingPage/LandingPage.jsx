@@ -7,7 +7,7 @@ import JoinCommunity from './component/JoinCommunity'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='bg-[#000000] text-[#FFFFFF]'>
         <HeroPage/>
         <HowItWorks/>
         <ComingSoon/>
