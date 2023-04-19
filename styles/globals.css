@@ -109,5 +109,7 @@ body{
     color: #fff;
 }
   
-  
+.backgroundd{
+  background-image: url('/src/images/background2.png') ;
+}
   

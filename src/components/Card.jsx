@@ -51,7 +51,7 @@ const Card = (prop) => {
       }
     return (
 
-    <div className='bg-white bg-[#1c2020] border-[#1c2020] w-[30%] lgDesktop:w-[30.5%] smDesktop:w-[29.78%] smDesk:w-[47%] tabletAir:w-[46%] tablet:w-[45.7%] mobile:w-[100%] h-[450px] rounded-lg pb-10'>
+    <div className=' bg-[#1c2020] border-[#1c2020] w-[30%] lgDesktop:w-[30.5%] smDesktop:w-[29.78%] smDesk:w-[47%] tabletAir:w-[46%] tablet:w-[45.7%] mobile:w-[100%] h-[450px] rounded-lg pb-10'>
 
 
         <img src={prop.imgSrc} className='w-full h-[60%] rounded-t-lg object-cover'/>
