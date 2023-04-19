@@ -51,7 +51,7 @@ const Card = (prop) => {
       }
     return (
 
-    <div className='w-[23%] lgDesktop:w-[30.5%] smDesktop:w-[29.78%] smDesk:w-[47%] tabletAir:w-[46%] tablet:w-[45.7%] mobile:w-[100%] h-[450px] rounded-lg pb-10 bg-white'>
+    <div className='bg-white bg-[#1c2020] border-[#1c2020] w-[30%] lgDesktop:w-[30.5%] smDesktop:w-[29.78%] smDesk:w-[47%] tabletAir:w-[46%] tablet:w-[45.7%] mobile:w-[100%] h-[450px] rounded-lg pb-10'>
 
 
         <img src={prop.imgSrc} className='w-full h-[60%] rounded-t-lg object-cover'/>
@@ -63,8 +63,7 @@ const Card = (prop) => {
 
                             </div>
                             <div className=' ml-4'>
-                            <h4 className='font-bold text-[14px] capitalize text-fair-blue'>{prop.username}</h4>
-                            <p className='text-fair-blue'>{prop.order}</p>
+                            <h4 className='font-bold text-[14px] capitalize text-[#FFFFFF]'>{prop.username}</h4>
                             </div>
                         </div>
                     {/* <div className='flex pr-3'>
@@ -73,13 +72,13 @@ const Card = (prop) => {
                     </div> */}
                 </div>
         <div className='w-[90%] mx-auto'>
-            <h2 className='text-fair-blue text-[18px] capitalize mt-2 font-bold px-4'>{prop.skill}</h2>
-            <p className=' text-[14px] font-normal mx-auto text-left mt-4 break-words leading-4'>{prop.description.slice(0,100)}</p>
+            <h2 className='text-[#FFFFFF] text-[18px] capitalize mt-2 font-bold px-4'>{prop.skill}</h2>
+            <p className='text-[#FFFFFF] text-[14px] font-normal mx-auto text-left px-4 mt-4 break-words leading-4'>{prop.description.slice(0,100)}</p>
           
             <div className='flex justify-end'>
             {/* <h2 className='text-red font-bold text-2xl pl-4 pt-1'>From {prop.price}</h2> */}
 
-            <button className="px-7 py-2 border border-blue-300 rounded-lg mr-4 mt-4 bg-regal-blue text-white" onClick={handleClickOpen} >HIRE</button>
+            <button className="px-7 py-2 border border-white rounded-lg mr-4 mt-4 text-[#FFFFFF]" onClick={handleClickOpen} >HIRE</button>
             </div>
         </div>
     

@@ -1,21 +1,21 @@
-import React from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+// import React from "react";
+// import Footer from "../components/Footer";
+// import Navbar from "../components/Navbar";
 
 
 
 
 
-const PageLayout = ({children}) =>{
+// const PageLayout = ({children}) =>{
 
-    return(
-        <div>
-            <Navbar />
-            {children}
+//     return(
+//         <div>
+//             <Navbar />
+//             {children}
 
-            <Footer />
-        </div>
-    )
-}
+//             <Footer />
+//         </div>
+//     )
+// }
 
-export default PageLayout;
+// export default PageLayout;
