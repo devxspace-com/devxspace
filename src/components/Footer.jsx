@@ -15,7 +15,7 @@ import {
 const Footer = () => {
   return (
     <div className=" bottom-0  w-full overflow-clip">
-      <div className="bg-[#052c5b] justify-between  text-center pb-[100px] pt-[20px] ">
+      <div className="bg-[#000000] justify-between  text-center pb-[100px] pt-[20px] ">
         <h3 className="text-white text-[32px] font-bold text-center">
           Subscribe Now!
         </h3>
@@ -33,9 +33,9 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="w-12 bg-[#132c8d] rounded-r-lg hover:bg-[#] h-12 "
+              className="w-12 bg-[#000000] rounded-r-lg hover:bg-[#] h-12 "
             >
-              <FaArrowRight className="text-light-blue ml-4" />
+              <FaArrowRight className="text-white ml-4" />
             </button>
           </div>
         </form>

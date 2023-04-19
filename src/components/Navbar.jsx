@@ -3,9 +3,12 @@ import Connect from "./Connect";
 import Link from 'next/link';
 import { useAccount } from "wagmi";
 import Image from 'next/image';
-import logo from "../images/devlogo.png"
+// import logo from "../images/devlogo.png"
 import Update from "./Update";
 import CreateGig from "./CreateGig";
+// import Logo from '../utils/1.svg'
+import ImageLogo from '../images/imageLogo.png';
+
 
 const Navbar = () => {
   const {address} = useAccount();
@@ -32,37 +35,35 @@ const Navbar = () => {
     setCreateGig(false);
     setOpenCreateGig(false);
   }
-
+// style={{objectFit: 'cover', objectPosition: 'center'}}
   return (
     <div>
-      <div className='bg-blue-50 flex flex-row justify-between w-[96%]  mx-auto'>
-        
-          <Link href="/" className="">
-            <Image src={logo} className='w-[250px] h-[100px] object-cover'/>
-            </Link>      
+       <div className='flex flex-row justify-between w-[100%] mx-auto mt-2 bg-[#000000] h-16 text-[#b7b7b7] backdrop-filter backdrop-blur-lg'>
+        <Link href="/" >
+            <Image src={ImageLogo} width={200} height={50} style={{objectFit:'cover', objectPosition:'center', marginLeft : '10px'}} />
+        </Link>      
 
-            {address && <div className="flex items-center gap-6 text-[16px] font-medium capitalize">
+          {address && <div className="flex items-center gap-6 text-[16px] font-medium capitalize">
           
-          <Link href='/' className="flex items-center cursor-pointer hover:border-r-[2px] hover:border-[#132C8D] hover:text-[#132C8D] pr-[8px] ">
-
+          <Link href='/' className="flex items-center cursor-pointer hover:text-[#ffffff] pr-[8px] ">
           Home
         </Link>
 
-        <Link href='/profile' className="cursor-pointer hover:border-r-[2px] hover:border-[#132C8D] hover:text-[#132C8D] pr-[8px] ">
+        <Link href='/profile' className="cursor-pointer  hover:text-[#ffffff] pr-[8px] ">
           Dashboard
         </Link>
 
-        <Link href='/Search' className="hover:border-r-[2px] hover:border-[#132C8D] hover:text-[#132C8D] pr-[8px] cursor-pointer">
+        <Link href='/Search' className="hover:text-[#ffffff] pr-[8px] cursor-pointer">
           Hire
         </Link>
-        <div onClick={handleCreateGig} className=" cursor-pointer hover:border-r-[2px] hover:border-[#132C8D] hover:text-[#132C8D] pr-[8px]" >
+        <div onClick={handleCreateGig} className=" cursor-pointer hover:text-[#ffffff] pr-[8px]" >
          Create Gig
         </div>
 
-        <div onClick={handleUpdateProfileClick} className=" cursor-pointer hover:border-r-[2px] hover:border-[#132C8D] hover:text-[#132C8D] pr-[8px]" >
+        <div onClick={handleUpdateProfileClick} className=" cursor-pointer hover:text-[#ffffff] pr-[8px]" >
          Create Profile
         </div>
-              </div> }
+        </div> }
       
 
 

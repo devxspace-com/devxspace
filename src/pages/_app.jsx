@@ -4,7 +4,7 @@ import { configureChains, createClient, useAccount, WagmiConfig } from 'wagmi';
 import { arbitrum, goerli, mainnet, optimism, polygon, sepolia } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import '../../styles/globals.css';
-import Pagelayout from '../pagelayout/Pagelayout';
+// import Pagelayout from '../pagelayout/Pagelayout';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -71,9 +71,9 @@ return (
        <ToastContainer />
        <QueryClientProvider client={client}>
       <RainbowKitProvider chains={chains}>
-      <Pagelayout>
+      {/* <Pagelayout> */}
         <Component {...pageProps} />
-      </Pagelayout>
+      {/* </Pagelayout> */}
       </RainbowKitProvider>
        </QueryClientProvider>
     </WagmiConfig>
