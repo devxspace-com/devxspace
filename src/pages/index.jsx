@@ -1,14 +1,16 @@
-// import Head from 'next/head';
+import {React} from 'react'
+import LandingPage from '../features/newLandingPage/LandingPage'
 
-import LandingFeatures from '../features/landingpage/LandingFeatures';
 
-const Home = () => {
+
+
+const index = () => {
   return (
-  
-      <LandingFeatures />
+    <div>    
+        <LandingPage/>
 
-    
-  );
-};
+    </div>
+  )
+}
 
-export default Home;
+export default index
