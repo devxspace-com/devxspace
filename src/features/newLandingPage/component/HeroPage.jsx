@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroPage = () => {
   return (
-    <main className=''>
+    <main className='z-0'>
         <section className="flex w-[90%] mx-auto">
             <div className="w-[50%] tabletAir:w-[80%] tabletAir:z-[1] mobile:w-[100%] tabletAir:relative mobile:mt-8">
                 <h4 className="text-[20px] uppercase font-semibold bg-[#141414] w-[350px] text-center mt-2 py-2 rounded-lg text-[#C5C8C7] mobile:text-[16px] mobile:w-[300px]">The Amazing home of freelancers</h4>
