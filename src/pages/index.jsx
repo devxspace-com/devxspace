@@ -4,8 +4,7 @@ import LandingFeatures from '../features/landingpage/LandingFeatures';
 
 const Home = () => {
   return (
-    
-
+  
       <LandingFeatures />
 
     

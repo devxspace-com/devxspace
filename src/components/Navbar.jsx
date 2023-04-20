@@ -35,10 +35,9 @@ const Navbar = () => {
     setCreateGig(false);
     setOpenCreateGig(false);
   }
-// style={{objectFit: 'cover', objectPosition: 'center'}}
   return (
     <div>
-       <div className='flex flex-row justify-between w-[100%] mx-auto mt-2 bg-[#000000] h-16 text-[#b7b7b7] backdrop-filter backdrop-blur-lg'>
+       <div className='flex flex-row justify-between w-[100%] mx-auto bg-[#000000] h-16 text-[#b7b7b7] backdrop-filter backdrop-blur-lg'>
         <Link href="/" >
             <Image src={ImageLogo} width={200} height={50} style={{objectFit:'cover', objectPosition:'center', marginLeft : '10px'}} />
         </Link>      
@@ -65,8 +64,6 @@ const Navbar = () => {
         </div>
         </div> }
       
-
-
         <div className=" mr-10 flex items-center">
           <Connect />
         </div>

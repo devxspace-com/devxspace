@@ -1,10 +1,14 @@
-import React from 'react'
+import {React} from 'react'
 import LandingPage from '../../features/newLandingPage/LandingPage'
+
+
+
 
 const index = () => {
   return (
-    <div>
+    <div>    
         <LandingPage/>
+
     </div>
   )
 }
