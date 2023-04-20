@@ -20,7 +20,7 @@ const LandingFeatures = () => {
   }, []);
   return (
     <div>
-    <div className='bg-[#000000]' >
+    <div className="bg-[#000000] bg-center bg-cover bg-fixed bg-no-repeat h-screen w-full xsm:w-full sm:w-full z-40" >
       {isMobile ? <Mobilenav /> : <Navbar />}
        <LandingPage/>
     </div>
