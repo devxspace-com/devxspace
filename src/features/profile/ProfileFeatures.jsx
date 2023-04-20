@@ -5,6 +5,7 @@ import { useAccount } from 'wagmi'
 
 const ProfileFeatures = () => {
   const {address} = useAccount()
+  
   return (
     <div className='bg-[#EFF2F9] relative'>
         <Banner/>

@@ -35,7 +35,6 @@ const Navbar = () => {
     setCreateGig(false);
     setOpenCreateGig(false);
   }
-// style={{objectFit: 'cover', objectPosition: 'center'}}
   return (
     <div>
        <div className='flex flex-row justify-between w-[100%] mx-auto mt-2 bg-[#000000] h-16 text-[#b7b7b7] backdrop-filter backdrop-blur-lg'>
@@ -65,8 +64,6 @@ const Navbar = () => {
         </div>
         </div> }
       
-
-
         <div className=" mr-10 flex items-center">
           <Connect />
         </div>
