@@ -19,7 +19,7 @@ const Search = () => {
   return (
     <div className="">
       <div className="bg-center bg-cover bg-fixed bg-no-repeat h-screen w-full xsm:w-full sm:w-full" style={{backgroundImage: `url(${bg.src})`}}>
-        {/* <Navbar /> */}
+        <Navbar />
         <div className='items-center h-[50%] w-[70%] xsm:w[100%] sm:w-full mt-48  mx-auto'>
         <h1 className='text-white font-extrabold text-center' style={{fontSize: '4.5rem', lineHeight:'1'}} >Built to Enhance seamless Freelancing</h1>
         <p className='text-white w-[50%] mx-auto text-center items-center justify-center'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
