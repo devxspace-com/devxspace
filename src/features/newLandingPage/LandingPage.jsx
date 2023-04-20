@@ -21,17 +21,12 @@ const LandingPage = () => {
   }, []);
   return (
     <div className='bg-[#000000] text-[#FFFFFF]'>
-    <div>
-      {isMobile ? <Mobilenav /> : <Navbar />}
-      </div>
-      <div>
       <HeroPage/>
         <HowItWorks/>
         <ComingSoon/>
         <EcoSystem/>
         <JoinCommunity/>
-        <Footer />
-      </div>               
+        <Footer />             
     </div>
   )
 }
