@@ -15,10 +15,13 @@ const Profile = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
+    <div  className='bg-[#000000]' >
     <div>
-    <div className='bg-[#000000]'>
     {isMobile ? <Mobilenav /> : <Navbar />}
+    <div className="mobile:mt-10">
+
         <ProfileFeatures/>
+    </div>
     </div>
       <Footer/>
     </div>
