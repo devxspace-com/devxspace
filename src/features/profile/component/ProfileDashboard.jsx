@@ -14,23 +14,32 @@ import { Switch } from '@headlessui/react'
 import PendingTask from './PendingTask';
 import Agent from './Agent';
 import ClipLoader from "react-spinners/ClipLoader";
+import { toast } from 'react-toastify';
+import { useRouter } from 'next/router';
 
 
 const ProfileDashboard = () => {
   const [enabled, setEnabled] = useState(false)
   const [showSpinner, setShowSpinner] = useState(false)
   const {address} = useAccount();
-
+  const router = useRouter();
   const {data, isLoading, isError, error, refetch} = useFetchProfile(address);
 
-  console.log("llll", "https://iamsuperman.pythonanywhere.com/" + data?.avatar);
+  // console.log("llll", "https://iamsuperman.pythonanywhere.com/" + data?.avatar);
   // const image = ``;
+  async function dataItem() {
+    const item = await data;
+    return item;
+  }
 
   useEffect(() => {
-    if(!data){
+    const userdata = dataItem();
+    if(!userdata || error){
       setShowSpinner(!showSpinner)
+      router.push('/');
+      toast.info('Create Profile');
     }
-  },[data])
+  },[data, error])
   
   return (
     <main className="w-[100%] flex justify-center pb-10  bg-[#EFF2F9]">
@@ -63,7 +72,7 @@ const ProfileDashboard = () => {
 
           </div>
             {/* checking next */}
-            <div className="py-10 flex w-[100%] mr-10 tabletAir:gap-4 tabletAir:rounded-lg pl-4  items-center tabletAir:bg-[#052C5B] tabletAir:ml-[20px] gap-2 mobile:mx-auto">
+            <div className="py-10 flex w-[100%] mr-10 tabletAir:gap-4 tabletAir:rounded-lg pl-4  items-center tabletAir:bg-[#000000] tabletAir:ml-[20px] gap-2 mobile:mx-auto">
               <Switch
                 checked={enabled}
                 onChange={setEnabled}
@@ -91,63 +100,6 @@ const ProfileDashboard = () => {
             </h2>
           </div>
           <div className=" flex justify-between mt-5">
-            {/* <div className="w-[30%] h-[100px] flex gap-2 items-center bg-[white] rounded-lg pl-6">
-              <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#1BAF65] ">
-                <FiCheckCircle size={20} className="text-[#EAD5FF]" />
-              </div>
-
-              <div className="">
-                <h2 className="text-[22px] font-bold">1</h2>
-                <p className="">Completed Offer</p>
-              </div>
-            </div>
-            <div className="w-[30%] h-[100px] flex gap-2 items-center bg-[white] rounded-lg pl-6">
-              <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#D11357] ">
-                <FiAlertCircle size={20} className="text-[#EAD5FF]" />
-              </div>
-              <div className="">
-                <h2 className="text-[22px] font-bold">1</h2>
-                <p className="">In Review</p>
-              </div>
-            </div>
-            <div className="w-[30%] h-[100px] flex gap-2 items-center bg-[white] rounded-lg pl-6">
-              <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#052C5B]">
-                <FiMap size={20} className="text-[#EAD5FF]" />
-              </div>
-              <div className="">
-                <h2 className="text-[22px] font-bold">1</h2>
-                <p className="text-[14px] font-normal">Job posted</p>
-              </div>
-            </div>
-          </div>
-          <div className=" flex justify-between mt-5">
-            <div className="w-[30%] h-[100px] flex gap-2 items-center bg-[white] rounded-lg pl-6">
-              <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#CFECFE] ">
-                <FaBriefcase size={20} className="text-[#EAD5FF]" />
-              </div>
-              <div className="">
-                <h2 className="text-[22px] font-bold">1</h2>
-                <p className="">Total Earned</p>
-              </div>
-            </div>
-            <div className="w-[30%] h-[100px] flex gap-2 items-center bg-[white] rounded-lg pl-6">
-              <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#F39F00] ">
-                <FaRegCreditCard size={20} className="text-[#EAD5FF]" />
-              </div>
-              <div className="">
-                <h2 className="text-[22px] font-bold">1</h2>
-                <p className="">Wallet Balance</p>
-              </div>
-            </div>
-            <div className="w-[30%] h-[100px] flex gap-2 items-center bg-[white] rounded-lg pl-6">
-              <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#F9E7EB]">
-                <FaLock size={20} className="text-[#EAD5FF]" />
-              </div>
-              <div className="">
-                <h2 className="text-[22px] font-bold">1</h2>
-                <p className="text-[14px] font-normal">Total Locked</p>
-              </div>
-            </div> */}
           </div>
           <div className="">
 

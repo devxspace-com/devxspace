@@ -15,7 +15,7 @@ import {
 const Footer = () => {
   return (
     <div className=" bottom-0  w-full overflow-clip">
-      <div className="bg-[#000000] justify-between  text-center pb-[100px] pt-[20px] ">
+      <div className="bg-[#000000] justify-between  text-center pb-[40px] pt-[70px] ">
         <h3 className="text-white text-[32px] font-bold text-center">
           Subscribe Now!
         </h3>
@@ -44,7 +44,7 @@ const Footer = () => {
 
       <div className="">
        
-            <div className="mt-[40px] mx-auto flex justify-center gap-8">
+            <div className="mx-auto flex justify-center gap-8 text-[#ffffff]">
               <a href="/" className="">
                 <FaFacebookF className="" size={30}/>
               </a>
@@ -61,7 +61,7 @@ const Footer = () => {
                 <FaYoutube size={30}/>
               </a>
             </div>
-            <div className="mt-[40px] mx-auto flex justify-center gap-8">
+            <div className="mt-[40px] mx-auto flex justify-center gap-8 text-[#ffffff]">
               <a href="/" className="">
                 Home
               </a>
@@ -80,7 +80,7 @@ const Footer = () => {
       
         
       </div>
-      <div className="text-[14px] mt-7 text-center pb-4">
+      <div className="text-[14px] mt-7 text-center pb-4 text-[#ffffff]">
         &copy; devxspace 2023 All rights reserved
       </div>
     </div>
