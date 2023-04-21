@@ -32,7 +32,7 @@ const Search = () => {
   }, []);
   
   return (
-    <div className="">
+    <div className="bg-[black] text-white">
       <div className="bg-center bg-cover bg-fixed bg-no-repeat h-screen w-full xsm:w-full sm:w-full" style={{backgroundImage: `url(${bg.src})`}}>
         {isMobile ? <Mobilenav /> : <Navbar />}
         <div className='items-center h-[50%] w-[70%] sm:w-full lg:mt-52 xsm:mt-36 mx-auto'>
