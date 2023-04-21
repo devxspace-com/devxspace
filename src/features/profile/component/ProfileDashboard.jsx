@@ -85,7 +85,7 @@ const ProfileDashboard = () => {
 
         {/*  */}
         <section className="w-[76%] lgDesktop:w-[75%] smDesktop:w-[70%] smDesk:w-[68%] tabletAir:w-[100%] mt-5">
-          <div className="w-[100%] tabletAir:hidden bg-[#052C5B] h-14 rounded-lg flex items-center">
+          <div className="w-[100%] tabletAir:hidden bg-[#000000] h-14 rounded-lg flex items-center">
             <h2 className="text-[14px] font-medium text-[#FFFFFF] pl-6  leading-4 ">
               Dashboard
             </h2>
