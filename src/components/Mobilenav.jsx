@@ -68,7 +68,7 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false)
     return (
-        <nav>      
+        <nav className='bg-[#000000]'>      
         <MobileNav open={open} setOpen={setOpen}/>
             <div className="w-11/12 flex justify-between items-center">
             <Link href="/" className='mt-2'>
