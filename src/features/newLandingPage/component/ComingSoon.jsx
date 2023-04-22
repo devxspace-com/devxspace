@@ -5,7 +5,7 @@ import Image from "next/image";
 const ComingSoon = () => {
   return (
     <main>
-        <section className='flex w-[90%] tabletAir:flex-col mx-auto border-[1px] rounded-lg bg-[#121806] border-[#121806]  shadow-xl px-2 mobile:px-auto relative '>
+        <section className='flex w-[90%] tabletAir:flex-col mx-auto border-[1px] rounded-lg bg-[#0b0e04] border-[#121806]  shadow-xl px-2 mobile:px-auto relative '>
             <div className="w-[50%] smDesktop:w-[100%] pt-10 pb-12 relative z-[1]">
                 <h3 className="text-[24px] font-semibold text-[#CCE9E7] mobile:text-[20px]">Coming Soon</h3>
                 <h1 className='text-[58px] leading-[62px] font-bold mobile:text-[34px] mobile:leading-[40px]'>Community Owned Developer DAO</h1>
