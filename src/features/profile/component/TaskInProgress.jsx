@@ -71,7 +71,7 @@ const TaskInProgress = (props) => {
             toast.info("submitting task",)
         }
         if(acceptSuccess){
-          toast.success("task submitted for review")
+          toast.success("task Accepted")
         }
         if(acceptIsError){
           toast.error(acceptError?.response?.data?.error)

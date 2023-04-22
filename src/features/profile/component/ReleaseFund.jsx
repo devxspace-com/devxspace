@@ -25,7 +25,7 @@ const ReleaseFund = (props) => {
 
       const Accept = (e) =>{
         e.preventDefault()
-        release();;
+        release();
     }
 
 
