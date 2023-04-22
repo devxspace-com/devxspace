@@ -5,7 +5,7 @@ import Image from "next/image";
 const ComingSoon = () => {
   return (
     <main>
-        <section className='flex w-[90%] tabletAir:flex-col mx-auto border-[1px] rounded-lg bg-[#121806] border-[#121806]  shadow-xl px-2 mobile:px-auto relative '>
+        <section className='flex w-[90%] tabletAir:flex-col mx-auto border-[1px] rounded-lg bg-[#0b0e04] border-[#121806]  shadow-xl px-2 mobile:px-auto relative '>
             <div className="w-[50%] smDesktop:w-[100%] pt-10 pb-12 relative z-[1]">
                 <h3 className="text-[24px] font-semibold text-[#CCE9E7] mobile:text-[20px]">Coming Soon</h3>
                 <h1 className='text-[58px] leading-[62px] font-bold mobile:text-[34px] mobile:leading-[40px]'>Community Owned Developer DAO</h1>
@@ -17,8 +17,13 @@ const ComingSoon = () => {
 Our goal is to build a space where developers can come together to exchange knowledge, skills, and ideas. We believe that by creating a supportive community, we can help developers grow and reach their full potential. At Devxspace, we are committed to providing a platform that encourages participation and rewards excellence.
 </p>
             </div>
+<<<<<<< HEAD
             <div className=" ">
                 <Image src={hand} alt='community dao' className='absolute right-0 h-[630px] smDesktop:h-[694px] smDesk:h-[760px] tabletAir:top-0 tabletAir:h-[660px] mobile:h-[566px]'/>
+=======
+            <div className="w-[50%] ">
+                <Image src={hand} alt='community dao' className='absolute right-0 h-[570px] smDesktop:h-[694px] smDesk:h-[760px] tabletAir:top-0 tabletAir:h-[660px] mobile:h-[566px] opacity-[50%]'/>
+>>>>>>> 26c27887607ed6eb5b69ea1a7c2579b92d00923b
             </div>
         </section>
         </main>
