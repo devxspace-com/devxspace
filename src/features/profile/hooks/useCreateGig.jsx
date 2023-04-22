@@ -1,4 +1,4 @@
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import { BASE_URL } from "../../../utils/Api";
 import axios from "axios";
 
@@ -12,6 +12,7 @@ const useCreateGig = () => {
       
       },
     };
+    const queryClient = useQueryClient();
   
     const registerService = (data)=>{
       const formData = new FormData();
@@ -22,7 +23,11 @@ const useCreateGig = () => {
      
       return axios.post(url, data, config);
     }
-  return useMutation(registerService)
+  return useMutation(registerService, {
+onSuccess:()=>{
+queryClient.invalidateQueries("tasks")
+}
+  })
 }
 
 export default useCreateGig

@@ -29,6 +29,10 @@ const Update = (props) => {
   // const handleClickOpen = () => {
   //   setOpen(true);
   // };
+  const handleSkillsChange = (e) => {
+    const skillsList = e.target.value.split(',');
+    setSkills(skillsList);
+  }
 
 
   const handleClose = () => {
@@ -66,14 +70,15 @@ const Update = (props) => {
     if(userName === "" || about === "" || skills ===""){
       toast.error("All fields Required")
     }
+    const dataArray = skills.split(',').filter(item => item.trim() !== '')
     const people={
       username:userName,
       avatar:files,
       address,
-      skills:skills,
+      skills: JSON.stringify(dataArray),
       about:about
     }
-    // console.log(files[0];
+    console.log(dataArray);
 
     mutate(people)
    
@@ -181,6 +186,8 @@ mutate(people)
               value={skills}
               inputProps={{ maxLength: 50 }}
               onChange={(e) =>setSkills(e.target.value)}
+              // value={skills.join(',')}
+              //  onChange={handleSkillsChange}
 
               className="my-3"
             />

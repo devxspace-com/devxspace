@@ -6,7 +6,7 @@ import { useQuery } from 'react-query'
 
 const useFetchAllTask = (address) => {
     // /ongoing_tasks/<address>
-    const API = `${BASE_URL}/agent/dashboard/${address}`
+    const API = `${BASE_URL}/completed_tasks/${address}`
 
     const config ={
         headers:{

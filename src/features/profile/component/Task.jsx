@@ -51,7 +51,7 @@ const Task = () => {
     allFetch?.map((data)=>(
 <>
 {data.fund_released
- && data.completed &&
+ && data.completed && 
 
 <CompletedTask title={data.title} description={data.description}  id={data.task_id} address={data.developer_address} key={data.task_id}  developer_address={data.developer_address} buyer_address={data.buyer_address} />
  }
