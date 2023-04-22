@@ -9,7 +9,6 @@ const BuyerTask = () => {
     const {data} = useTaskInProgress(address)
 
     const {data: allFetch} = useFetchAllTask(address)
-    console.log("mm", data);
   return (
     <section className="mt-4">
       <section className="flex mobile:flex-col gap-4">

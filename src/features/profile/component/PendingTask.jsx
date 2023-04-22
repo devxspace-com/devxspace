@@ -7,7 +7,6 @@ import useFetchPendingTaskNot from '../hooks/useFetchPendingTaskNot';
 const PendingTask = () => {
     const { address } = useAccount();
     const { data } = useFetchPendingTaskNot(address);
-    console.log("eeee", data);
   return (
     <section className="mt-4">
     <section className="gap-4">

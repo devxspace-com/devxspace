@@ -47,11 +47,10 @@ const OnGoingTask = (props) => {
         const {data: AppcancelWaitData, isLoading: AppcancelWaitLoading, isSuccess : AppcancelaSuccess} = useWaitForTransaction({
           hash: ApproveCancelData?.hash,
           onSuccess(data) {
-            console.log(data);
             cancel({task_id:props.id, address:props.buyer_address, developer_address:props.developer_address})
           },
           onError(error) {
-            console.log(error);
+
           },
         }) 
 

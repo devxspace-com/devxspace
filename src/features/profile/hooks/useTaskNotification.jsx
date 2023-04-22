@@ -4,7 +4,6 @@ import { useQuery } from "wagmi"
 
 const useTaskNotification = (address) => {
     const API = `${BASE_URL}/available_tasks/${address}`
-console.log(API);
     const config ={
         headers:{
             "Content-Type": "application/json",

@@ -40,7 +40,7 @@ const CreateGig = (props) => {
       address,
 
     }
-  // console.log(file[0]);
+
     mutate(service)
 
     

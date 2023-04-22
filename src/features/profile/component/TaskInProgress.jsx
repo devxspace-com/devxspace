@@ -58,11 +58,11 @@ const TaskInProgress = (props) => {
         const {data: AppcancelWaitData, isLoading: AppcancelWaitLoading, isSuccess : AppcancelaSuccess} = useWaitForTransaction({
           hash: ApproveCancelData?.hash,
           onSuccess(data) {
-            console.log(data);
+            
             approve({task_id:props.id, address:props.address, developer_address:props.developer_address})
           },
           onError(error) {
-            console.log(error);
+            
           },
         }) 
 

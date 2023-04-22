@@ -36,7 +36,6 @@ const SingleTaskNotification = (props) => {
   })
     const Accept = (e) =>{
         e.preventDefault()
-        console.log("clicked");
         accept({task_id:props.id, address:props.address})
     }
     const Reject = (e) =>{

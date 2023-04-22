@@ -5,7 +5,7 @@ import { BASE_URL } from "../../../utils/Api";
 
 const useFetchServices = () => {
     const API = `${BASE_URL}/list_services`
-    console.log("api", API);
+    
 
     const config ={
         headers:{

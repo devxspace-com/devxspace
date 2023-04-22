@@ -24,9 +24,8 @@ const ProfileDashboard = () => {
   const {address} = useAccount();
   const router = useRouter();
   const {data, isLoading, isError, error, refetch} = useFetchProfile(address);
-  console.log('asd', data);
+ 
 
-  // console.log("llll", "https://iamsuperman.pythonanywhere.com/" + data?.avatar);
   // const image = ``;
   async function dataItem() {
     const item = await data;

@@ -12,7 +12,7 @@ import Mobilenav from '../../components/Mobilenav';
 const Search = () => {
   const {data, isLoadins, isError, error} = useFetchServices()
   const [isMobile, setIsMobile] = useState(false);
-  // console.log("heee", data);
+  
   const ref = useRef(null);
   
   const handleScroll = () =>{

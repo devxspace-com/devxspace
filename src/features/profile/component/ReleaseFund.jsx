@@ -25,7 +25,9 @@ const ReleaseFund = (props) => {
 
       const Accept = (e) =>{
         e.preventDefault()
-        release();;
+        release();
+        accept({task_id:props.id, agent_address:props.agent_address});
+
     }
 
 
@@ -40,11 +42,9 @@ const ReleaseFund = (props) => {
     const {data: releasWaitData, isLoading: releaseDataWaitLoading, isSuccess : releaseDataSuccess} = useWaitForTransaction({
       hash: releaseData?.hash,
       onSuccess(data) {
-        console.log(data);
         accept({task_id:props.id, agent_address:props.agent_address});
       },
       onError(error) {
-        console.log(error);
       },
     }) 
 

@@ -41,30 +41,10 @@ function MyApp({ Component, pageProps }) {
   const client = new QueryClient();
   const { address } = useAccount();
   // const address = account?.address;
-  console.log(address)
+  
 
 
-  // useEffect(() => {
-  //   const url = `${BASE_URL}/login`
-  //   if (address) {
-  //     // Send the address to the login route
-  //     fetch(url, {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({ address }),
-  //     })
-  //       .then((response) => {
-  //         if (response.ok) {
-  //           console.log('Successfully logged in');
-  //         } else {
-  //           console.log('Failed to log in');
-  //         }
-  //       })
-  //       .catch((error) => {
-  //         console.error('Failed to log in:', error);
-  //       });
-  //   }
-  // }, [address]);
+
 
 return (
     <WagmiConfig client={wagmiClient}>

@@ -16,7 +16,6 @@ const UpdateProfileCard = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Send updated profile information to the server
-    console.log(`Name: ${name}, Avatar: ${avatar}`);
   };
 
   return (

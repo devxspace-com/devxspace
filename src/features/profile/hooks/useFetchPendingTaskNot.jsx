@@ -6,7 +6,6 @@ import axios from "axios"
 const useFetchPendingTaskNot = (address) => {
 
     const API = `${BASE_URL}/payable/${address}`
-    console.log("pay", API);
     
     const config ={
         headers:{

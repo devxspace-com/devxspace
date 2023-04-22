@@ -11,8 +11,6 @@ const Task = () => {
     const {address} =useAccount()
     const {data} = useFetchOngoinTask(address)
     const {data: allFetch} = useFetchAllTask(address)
-    console.log("onGoing Task",data);
-    console.log("Fetch Task",allFetch);
   return (
     <section className="mt-4">
       <section className="flex gap-4 mobile:flex-col">

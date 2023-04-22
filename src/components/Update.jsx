@@ -78,7 +78,6 @@ const Update = (props) => {
       skills: JSON.stringify(dataArray),
       about:about
     }
-    console.log(dataArray);
 
     mutate(people)
    
@@ -106,7 +105,7 @@ mutate(people)
   useEffect(()=>{
     if(isError){
       toast.error(error.response?.data?.error)
-      // console.log(error.response?.data?.error);
+
     }
     if(isSuccess){
       toast.success("Profile Created")

@@ -42,11 +42,11 @@ const ReturnFund = (props) => {
       const {data: AgCancellWaitData, isLoading: AppcancelWaitLoading, isSuccess : AppcancelaSuccess} = useWaitForTransaction({
         hash: AgCancelData?.hash,
         onSuccess(data) {
-          console.log(data);
+        
         cancel({task_id:props.id, agent_address:props.agent_address,})
         },
         onError(error) {
-          console.log(error);
+     
         },
       }) 
 

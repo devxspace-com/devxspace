@@ -44,7 +44,7 @@ const PendingTaskNotification = (props) => {
       accept({task_id:props.id, new_task_id:poolID, buyer_address:props.buyer_address, agent_address:"0x2e767b4A3416Ef16458355EFAcec7d3228Cec08C", developer_address:props.developer_address, })
     },
     onError(error) {
-      console.log(error);
+     
     },
   }) 
   //For Token Approval
@@ -66,10 +66,10 @@ const PendingTaskNotification = (props) => {
   const {data: approveWaitData, isLoading: approveWaitLoading, isSuccess : isapproveSuccess} = useWaitForTransaction({
     hash: approveData?.hash,
     onSuccess(data) {
-      console.log(data);
+     
     },
     onError(error) {
-      console.log(error);
+     
     },
   })
    
@@ -89,10 +89,9 @@ const PendingTaskNotification = (props) => {
     onSuccess(data) {
       const poolID = parseInt((data.logs[0].data.slice(-64)),16);
       accept({task_id:props.id, buyer_address:props.buyer_address, agent_address:"0x2e767b4A3416Ef16458355EFAcec7d3228Cec08C", developer_address:props.developer_address, })
-      console.log(data)
     },
     onError(error) {
-      console.log(error);
+    
     },
   }) 
   

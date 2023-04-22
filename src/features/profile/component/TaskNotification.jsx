@@ -8,7 +8,6 @@ import SingleTaskNotification from "./SingleTaskNotification";
 const TaskNotification = () => {
   const { address } = useAccount();
   const { data } = useTaskNotification(address);
-  console.log("hi", data);
   return (
     <section className="mt-4">
       <section className="gap-4">
