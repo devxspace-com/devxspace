@@ -28,7 +28,7 @@ const CreateGig = (props) => {
     if(!address){
       toast.error("Connect your wallet address")
     }
-    if(description === "" || price === "" || title === "" || file ===[]){
+    if(description === "" || title === "" || file ===[]){
       toast.error("All fields need to be filled")
     }
 
@@ -70,7 +70,6 @@ if(isSuccess){
               type="text"
               fullWidth
               value={title}
-              inputProps={{ maxLength: 30 }}
               onChange={(e)=>setTitle(e.target.value)}
               className="my-3"
             />   
@@ -82,19 +81,9 @@ if(isSuccess){
               rows={4}
               multiline
               value={description}
-              inputProps={{ maxLength: 300 }}
               onChange={(e)=>setDescription(e.target.value)}
               className="my-3"
             />
-            <TextField
-              margin="dense"
-              label="price"
-              type="number"
-              fullWidth
-              value={price}
-              onChange={(e)=>setPrice(e.target.value)}
-              className="my-3"
-            />    
             <TextField
               type="file"
               variant="outlined"

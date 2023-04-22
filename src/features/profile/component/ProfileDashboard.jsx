@@ -30,6 +30,7 @@ const ProfileDashboard = () => {
   // const image = ``;
   async function dataItem() {
     const item = await data;
+    setShowSpinner(true)
     return item;
   }
 
