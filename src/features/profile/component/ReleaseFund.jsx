@@ -26,8 +26,6 @@ const ReleaseFund = (props) => {
       const Accept = (e) =>{
         e.preventDefault()
         release();
-        accept({task_id:props.id, agent_address:props.agent_address});
-
     }
 
 

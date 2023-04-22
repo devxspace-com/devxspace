@@ -54,7 +54,7 @@ const Card = (prop) => {
 
       useEffect(()=>{
         if(isSuccess){
-          toast.success("You have succesfully hire a developer")
+          toast.success("You have succesfully hired a developer")
           setTitle("");
           setPrice("");
           setJobDetails("");
