@@ -8,7 +8,7 @@ const Profile = () => {
     
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1030);
     };
     handleResize();
     window.addEventListener("resize", handleResize);

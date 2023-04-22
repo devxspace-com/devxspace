@@ -131,6 +131,7 @@ mutate(people)
             </DialogContentText>
           </DialogContent>
           <DialogActions className="h-4/6">
+            <div className="bg-[#052C5B]">
             <Button
               onClick={handleOptionOne}
               color="primary"
@@ -138,6 +139,8 @@ mutate(people)
             >
               Buyer
             </Button>
+            </div>
+            <div className="bg-[#052C5B]">
             <Button
               onClick={handleOptionTwo}
               color="primary"
@@ -145,7 +148,8 @@ mutate(people)
               className="w-64 h-64 bg-blue-500 text-black font-bold text-2xl rounded-lg focus:outline-none hover:bg-blue-700 mx-2 bg-[#052C5B]"
             >
               Freelancer
-            </Button>
+            </Button>            
+            </div>
           </DialogActions>
         </Dialog>
      
