@@ -8,6 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import useHireDev from '../features/services/hooks/useHireDev';
 import { useAccount, useContractWrite, usePrepareContractWrite, useWaitForTransaction, useContractRead } from 'wagmi';
+import { toast } from 'react-toastify';
 
 
 const Card = (prop) => {
@@ -49,6 +50,20 @@ const Card = (prop) => {
       const handleLike = () =>{
         setIsActive(!isActive);
       }
+
+      useEffect(()=>{
+        if(isSuccess){
+          toast.success("You have succesfully hire a developer")
+          setTitle("");
+          setPrice("");
+          setJobDetails("");
+          setDeadline(0)
+          setOpen(false)
+        }
+        if(isError){
+          toast.error(error?.response?.data?.error)
+        }
+      },[isSuccess, isError, error])
     return (
 
     <div className=' bg-[#1c2020] border-[#1c2020] w-[30%] lgDesktop:w-[30.5%] smDesktop:w-[29.78%] smDesk:w-[47%] tabletAir:w-[46%] tablet:w-[45.7%] mobile:w-[100%] h-[450px] rounded-lg pb-10'>
