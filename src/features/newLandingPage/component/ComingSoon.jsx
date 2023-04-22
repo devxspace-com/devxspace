@@ -18,7 +18,7 @@ Our goal is to build a space where developers can come together to exchange know
 </p>
             </div>
             <div className="w-[100%] ">
-                <Image src={hand} alt='community dao' className='w-[100%] absolute right-0 h-[570px] smDesktop:h-[694px] smDesk:h-[760px] tabletAir:top-0 tabletAir:h-[660px] mobile:h-[566px] opacity-[50%]'/>
+                <Image src={hand} alt='community dao' className='w-[100%] absolute right-0 h-[600px] smDesktop:h-[694px] smDesk:h-[760px] tabletAir:top-0 tabletAir:h-[660px] mobile:h-[566px] opacity-[50%]'/>
             </div>
         </section>
         </main>
