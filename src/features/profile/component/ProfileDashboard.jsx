@@ -56,7 +56,7 @@ const ProfileDashboard = () => {
           <div className=" border-[1px] border-[white] w-[100%]  bg-[white] h-[300px] tabletAir:h-[350px] py-[25px] rounded-lg">
             
             <img
-              src={"https://iamsuperman.pythonanywhere.com/" + data?.avatar}
+              src={"https://devxspace.pythonanywhere.com/" + data?.avatar}
               alt="freelance picture"
               // layout='fill'
               // height={200}
