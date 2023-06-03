@@ -50,8 +50,8 @@ const Search = () => {
           return (
             <Card
               key={e.id}
-              imgSrc={"https://iamsuperman.pythonanywhere.com/" + e.image_file}
-              avatar={"https://iamsuperman.pythonanywhere.com/" + e?.user?.avatar}
+              imgSrc={"https://devxspace.pythonanywhere.com/" + e.image_file}
+              avatar={"https://devxspace.pythonanywhere.com/" + e?.user?.avatar}
               username={e?.user?.username}
               address={e?.user?.address}
               skill = {e.name}
