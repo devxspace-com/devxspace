@@ -1,1 +1,1 @@
-export const BASE_URL = "https://iamsuperman.pythonanywhere.com"
+export const BASE_URL = "https://devxspace.pythonanywhere.com"
